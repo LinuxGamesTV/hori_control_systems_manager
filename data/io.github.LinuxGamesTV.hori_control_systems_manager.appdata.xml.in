@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.LinuxGamesTV.hori_control_systems_manager</id>
+    <replaces>
+      <id>de.linuxgamestv.Hori</id>
+    </replaces>
+  <launchable type="desktop-id">io.github.LinuxGamesTV.hori_control_systems_manager.desktop</launchable>
+  <name>Oversteer</name>
+  <summary>A steering wheel manager</summary>
+  <developer id="io.github.LinuxGamesTV">
+    <name>Peter Stein</name>
+  </developer>
+  <metadata_license>CC0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <branding>
+    <color type="primary" scheme_preference="light">#f6f5f4</color>
+    <color type="primary" scheme_preference="dark">#77767b</color>
+  </branding>
+  <description>
+    <p>Hori Cotrol Syystems Manager  manages Hori steering wheels on Linux using the features provided by the loaded modules.</p>
+    <p>Features:</p>
+      <ul>
+        <li>Change rotation range.</li>
+        <li>Change emulation/working modes.</li>
+        <li>Combine accelerator/brakes pedals for games that use just one axis.</li>
+        <li>Change autocentering force strength.</li>
+        <li>Change force feedback gain.</li>
+        <li>Device configuration profiles.</li>
+        <li>Overlay window to display/configure range.</li>
+        <li>Use wheel buttons to configure range.</li>
+        <li>Hardware performance testing.</li>
+        <li>Combine accelerator/clutch pedals. Useful for flight simulators. (Not supported with in-kernel modules)</li>
+        <li>Change global force feedback gain. (Not supported with in-kernel modules)</li>
+        <li>Change each conditional force feedback effect type gain. (Not supported with in-kernel modules)</li>
+      </ul>
+    <p>Note: The udev rules found in the GitHub repository need to be installed for the application to work properly.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Home page</caption>
+      <image>https://raw.githubusercontent.com/LinuxGamesTV/hori_control_systems_manager/master/data/oversteer-readme.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="0.0.1" date="2026-11-20">
+      <description>
+        <ul>
+          <li>Initial Support for Force Feedback Truck Cotrol System</li>
+        </ul>
+      </description>
+    </release>
+  <url type="homepage">https://github.com/LinuxGamesTV/hori_control_systems_manager</url>
+  <url type="bugtracker">https://github.com/LinuxGamesTV/hori_control_systems_manager/issues</url>
+  <content_rating type="oars-1.0"/>
+  <update_contact>linuxgamestv@gmail.com</update_contact>
+  <translation type="gettext">hori</translation>
+</component>

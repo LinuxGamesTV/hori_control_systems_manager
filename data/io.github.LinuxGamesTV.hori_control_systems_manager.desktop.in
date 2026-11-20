@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Hori Cotrol Syystems Manager
+Comment=Steering Wheel Manager
+Exec=@bindir@/hori
+Terminal=false
+Type=Application
+StartupNotify=true
+StartupWMClass=hori
+Icon=io.github.berarma.Oversteer
+Categories=Game;Utility;
+Keywords=game;trucks;bus;cars;wheels
