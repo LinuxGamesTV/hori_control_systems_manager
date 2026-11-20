@@ -9,9 +9,9 @@
 </a>
 
 [_Hori Cotrol Syystems Manager_](https://github.com/LinuxGamesTV/hori_control_systems_manager) manages Hori steering wheels on
-Linux using the features provided by the loaded modules (based on  Oversteer). It doesn't provide
+Linux using the features provided by the loaded modules (based on [_Oversteer_](https://github.com/berarma/oversteer)). It doesn't provide
 hardware support, you'll still need this driver module that enables the hardware
-on Linux: [_Hori Cotrol Syystems Kernel Moddule_](https://github.com/LinuxGamesTV/hori_control_systems).
+on Linux: [_Hori Control Syystems Kernel Moddule_](https://github.com/LinuxGamesTV/hori_control_systems).
 
 Most wheels will work but won't have FFB without specific drivers that support
 that feature.
