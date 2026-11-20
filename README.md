@@ -13,10 +13,10 @@ Linux using the features provided by the loaded modules (based on [_Oversteer_](
 hardware support, you'll still need this driver module that enables the hardware
 on Linux: [_Hori Control Syystems Kernel Moddule_](https://github.com/LinuxGamesTV/hori_control_systems).
 
-Most wheels will work but won't have FFB without specific drivers that support
+The Hori Force Feedback Truck Control System will not work ad won't have FFB without specific drivers [_Hori Control Syystems Kernel Moddule_](https://github.com/LinuxGamesTV/hori_control_systems) that support
 that feature.
 
-I can test only on a Logitech G29 Driving Force. Please, report your
+I can test only on a Hori Force Feedback Truck Control System. Please, report your
 results with other devices. More wheel models will be added to this list
 as they are requested.
 
@@ -24,61 +24,32 @@ __Use at your own risk. Suggestions, bugs and pull requests welcome.__
 
 ## Supported devices
 
-_Oversteer_ maintains a list of known wheel devices. If your wheel isn't
+_Hori Cotrol Syystems Manager_ maintains a list of known wheel devices. If your wheel isn't
 recognized, please contact me.
 
 This section lists devices currently recognized. Being in this list doesn't
 imply good hardware support. __When thinking about buying a wheel don't rely
 solely on the information here__.
 
-_Oversteer_ recognizes the following Logitech wheels which are supported by the
+_Hori Cotrol Syystems Manager_ recognizes the following Logitech wheels which are supported by the
 default in-kernel module:
 
-- Wingman Formula GP
-- Wingman Formula Force GP
-- Driving Force / Formula EX
-- Driving Force Pro
-- Driving Force GT
-- Momo Force
-- Momo Racing Force
-- Speed Force Wireless
-- G25 Racing Wheel
-- G27 Racing Wheel
-- G29 Driving Force Racing Wheel (PS3 mode)
-- G920 Driving Force Racing Wheel
-- Logitech G923 for XBox (since Linux 6.3)
-- OpenFFBoard, (https://github.com/Ultrawipf/OpenFFBoard).
+- Hori Force Feedback Truck Control System
 
-Wheels using the Logitech driver (except XBOX/PC versions) can get improved
-support using [new-lg4ff](https://github.com/berarma/new-lg4ff), with more
+Wheels using the Hori Control Systems Kernel Module can get improved
+support using [_Hori Control Syystems Kernel Moddule_](https://github.com/LinuxGamesTV/hori_control_systems), with more
 effects and features. Some games won't have full FFB without it.
 
 The following wheels will need custom driver modules for FFB support.
 These drivers are still being worked on. **(I'm NOT claiming they will fully
 work. Please, check the related projects for more information.)**:
 
-- Logitech G923 for PS/PC with [new-lg4ff](https://github.com/berarma/new-lg4ff).
-- Thrustmaster T150 with [t150_driver](https://github.com/scarburato/t150_driver).
-- Thrustmaster TMX Force Feedback with [t150_driver](https://github.com/scarburato/t150_driver).
-- Thrustmaster T300 RS with [hid-tmff2](https://github.com/Kimplul/hid-tmff2).
-- Thrustmaster T248 with [hid-tmff2](https://github.com/Kimplul/hid-tmff2).
-- Thrustmaster TS-XW Racer with [hid-tmff2](https://github.com/Kimplul/hid-tmff2).
-- FANATEC CSL Elite Wheel Base with [hid-fanatecff](https://github.com/gotzl/hid-fanatecff).
-- FANATEC CSL Elite Wheel Base PS4 with [hid-fanatecff](https://github.com/gotzl/hid-fanatecff).
-- FANATEC ClubSport Wheel Base V2 with [hid-fanatecff](https://github.com/gotzl/hid-fanatecff).
-- FANATEC ClubSport Wheel Base V2.5 with [hid-fanatecff](https://github.com/gotzl/hid-fanatecff).
-- FANATEC Podium Wheel Base DD1/DD2 with [hid-fanatecff](https://github.com/gotzl/hid-fanatecff).
-- FANATEC CSL DD / GT DD Pro Wheel with [hid-fanatecff](https://github.com/gotzl/hid-fanatecff).
+- Hori Force Feedback Truck Control System for PC with [_Hori Control Syystems Kernel Moddule_](https://github.com/LinuxGamesTV/hori_control_systems).
 
 These wheels are recognized but don't have driver support (Force Feedback and
 other features won't work):
 
-- Thrustmaster Force Feedback Racing Wheel
-- Thrustmaster TX Racing Wheel
-- Thrustmaster T500 RS
-- Thrustmaster T80
-- Thrustmaster Ferrari 458
-
+-
 
 ## Features
 
@@ -109,40 +80,30 @@ what they're doing.
 
 ### AppImage
 
-@Samueru-sama has kindly created an [AppImage](https://github.com/pkgforge-dev/Oversteer-AppImage/releases) that can run on any distribution without installing
-anything.
 
 ### Arch
 
-Darvin Delgado (@DNModder) has kindly created an [AUR
-package](https://aur.archlinux.org/packages/oversteer/). Install following
-the [Arch Wiki
-instructions](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages).
 
 ### Gentoo
 
-@gripped has kindly created a [Gentoo ebuild](https://github.com/gripped/Logitech-wheel-ebuilds).
+
 
 ### Flathub
 
-Joshua John (@jo5huajohn) has kindly made a [Flatpak
-package](https://flathub.org/apps/io.github.berarma.Oversteer) available at
-Flathub.
 
 #### Permissions
 
 After installing the Flatpak package, permission files have to be installed manually.
 
 Copy the contents of
-[https://github.com/berarma/oversteer/tree/master/data/udev](https://github.com/berarma/oversteer/tree/master/data/udev)
-into `/usr/lib/udev/rules.d`.
+[https://github.com/LinuxGamesTV/hori_control_systems_manager/tree/master/data/udev](https://github.com/berarma/oversteer/tree/master/data/udev)
+into `/etc/udev/rules.d`.
 
 If you're using the terminal, these commands will install the permission files:
 
 ```
-sudo wget https://github.com/berarma/oversteer/raw/refs/heads/master/data/udev/99-fanatec-wheel-perms.rules -P /usr/lib/udev/rules.d/
-sudo wget https://github.com/berarma/oversteer/raw/refs/heads/master/data/udev/99-logitech-wheel-perms.rules -P /usr/lib/udev/rules.d/
-sudo wget https://github.com/berarma/oversteer/raw/refs/heads/master/data/udev/99-thrustmaster-wheel-perms.rules -P /usr/lib/udev/rules.d/
+sudo wget https://github.com/LinuxGamesTV/hori_control_systems_manager/raw/refs/heads/master/data/udev/99-hori-wheel.rules -P /etc/udev/rules.d/
+
 ```
 
 Restart your computer, or reload udev rules with command:
