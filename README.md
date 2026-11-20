@@ -1,4 +1,4 @@
-# Oversteer - Steering Wheel Manager for Linux
+# Hori Cotrol Syystems Manager - Hori Steering Wheelss Manager for Linux
 
 <p align="center">
   <img src="data/oversteer-readme.png">
@@ -8,10 +8,10 @@
     <img src="https://repology.org/badge/vertical-allrepos/oversteer.svg" alt="Packaging status" align="right" style="margin-left:2em;">
 </a>
 
-[_Oversteer_](https://github.com/berarma/oversteer) manages steering wheels on
-Linux using the features provided by the loaded modules. It doesn't provide
-hardware support, you'll still need a driver module that enables the hardware
-on Linux.
+[_Hori Cotrol Syystems Manager_](https://github.com/LinuxGamesTV/hori_control_systems_manager) manages Hori steering wheels on
+Linux using the features provided by the loaded modules (based on  Oversteer). It doesn't provide
+hardware support, you'll still need this driver module that enables the hardware
+on Linux: (https://github.com/LinuxGamesTV/hori_control_systems).
 
 Most wheels will work but won't have FFB without specific drivers that support
 that feature.
